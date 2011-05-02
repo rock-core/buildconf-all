@@ -15,7 +15,7 @@ if ! test -f $PWD/autoproj_bootstrap; then
     $DOWNLOADER http://www.rock-robotics.org/autoproj_bootstrap
 fi
 
-ruby autoproj_bootstrap $@ git git://gitorious.org/rock/buildconf-all.git branch=master
+ruby autoproj_bootstrap $@ git git://gitorious.org/rock/buildconf-all.git branch=master push_to=git@gitorious.org:rock/buildconf-all.git
 if test "x$@" != "xlocaldev"; then
     . $PWD/env.sh
     autoproj update
