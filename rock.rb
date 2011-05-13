@@ -15,6 +15,10 @@ def rock_autoproj_init(flavor)
     # Ignore the numerous backup files
     ignore(/~$/)
 
-    Autoproj.change_option('ROCK_FLAVOR', flavor)
+    if forced = ENV['ROCK_FORCE_FLAVOR']
+        Autoproj.change_option('ROCK_FLAVOR', forced)
+    else
+        Autoproj.change_option('ROCK_FLAVOR', flavor)
+    end
 end
 
