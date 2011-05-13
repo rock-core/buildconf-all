@@ -27,6 +27,8 @@ def rock_autoproj_init
             "",
             "See http://rock-robotics.org/startup/releases.html for more information"]
 
-    Autoproj.change_option('ROCK_FLAVOR', 'master')
+    if ENV['ROCK_FORCE_FLAVOR']
+        Autoproj.change_option('ROCK_FLAVOR', ENV['ROCK_FORCE_FLAVOR'])
+    end
 end
 
