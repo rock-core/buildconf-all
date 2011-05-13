@@ -27,12 +27,6 @@ def rock_autoproj_init
             "",
             "See http://rock-robotics.org/startup/releases.html for more information"]
 
-    if Autoproj.has_config_key?('ROCK_FLAVOR') && Autoproj.user_config('ROCK_FLAVOR') != 'master'
-        STDERR.puts "  Due to the current status of Rock, the stable and next flavors are disabled right now"
-        STDERR.puts "  I'll switch to master"
-        STDERR.print "  Press ENTER to continue"
-        STDIN.readline
-    end
     Autoproj.change_option('ROCK_FLAVOR', 'master')
 end
 
