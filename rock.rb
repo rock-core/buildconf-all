@@ -16,7 +16,7 @@ def rock_autoproj_init
     ignore(/~$/)
     configuration_option 'ROCK_FLAVOR', 'string',
         :default => 'next',
-        :values => ['next', 'master'],
+        :possible_values => ['next', 'master'],
         :doc => [
             "Which flavor of Rock do you want to use ?",
             "The 'stable' flavor is not updated often, but will contain well-tested code. It is not available yet",
