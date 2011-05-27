@@ -15,11 +15,11 @@ def rock_autoproj_init
     # Ignore the numerous backup files
     ignore(/~$/)
     configuration_option 'ROCK_FLAVOR', 'string',
-        :default => 'stable',
-        :values => ['stable', 'next', 'master'],
+        :default => 'next',
+        :values => ['next', 'master'],
         :doc => [
             "Which flavor of Rock do you want to use ?",
-            "The 'stable' flavor is not updated often, but will contain well-tested code",
+            "The 'stable' flavor is not updated often, but will contain well-tested code. It is not available yet",
             "The 'next' flavor is updated more often, and might contain less tested code",
             "it is updated from 'master' to test new features before they get pushed in 'stable'",
             "Finally, 'master' is where the development takes place. It should generally be in",
