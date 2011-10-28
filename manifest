@@ -1,6 +1,7 @@
 package_sets:
    - gitorious: rock-toolchain/package_set
    - gitorious: rock/package_set
+   - gitorious: rock-tutorials/package_set
 
 # Layout. Note that the rock.base, rock.toolchain and orocos.toolchain sets are
 # imported by other rock sets.
@@ -8,6 +9,7 @@ layout:
    - rock.base
    - rock.toolchain
    - rock
+   - rock.tutorials
 
 # The layout section specifies what to build, and where to build it (as a
 # subdirectory of the root installation directory). In the example below, all
