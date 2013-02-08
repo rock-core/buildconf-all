@@ -1,9 +1,16 @@
 #! /bin/sh
 
 CONF_REPO=rock/buildconf-all.git
-RUBY=ruby1.8
+RUBY=ruby1.9.1
 
 set -e
+
+if ! which $RUBY > /dev/null 2>&1; then
+    echo "cannot find the ruby executable '$RUBY'"
+    echo "on ubuntu, you should run"
+    echo "  sudo apt-get install $RUBY rubygems"
+    exit 1
+fi
 
 if ! test -f $PWD/autoproj_bootstrap; then
     if which wget > /dev/null; then
