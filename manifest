@@ -13,13 +13,13 @@ layout:
 
 # The layout section specifies what to build, and where to build it (as a
 # subdirectory of the root installation directory). In the example below, all
-# the packages of the rubim.orocos package set will be built, in the tools/
+# the packages of the rock.toolchain package set will be built, in the tools/
 # subdirectory: source in tools/typelib, tools/orocos/rtt, ... and installed
 # files in build/tools/typelib, build/tools/orocos/rtt, ...
 #
 # layout:
 #   - tools:
-#     - rubim.orocos
+#     - rock.toolchain
 #
 # Single packages can also be selected instead of whole package sets. The
 # package names are interpreted as a regular expression, so it is possible to
@@ -53,6 +53,6 @@ layout:
 # machine. You would then simply do:
 #
 # ignored_packages:
-#   - orocos/rtt
+#   - rtt
 #
 
