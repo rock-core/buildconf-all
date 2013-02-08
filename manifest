@@ -1,3 +1,8 @@
+#
+# Informations about the manifest of autoproj can be found here:
+# http://www.rock-robotics.org/documentation/autoproj/advanced/customization.html
+#
+
 package_sets:
    - gitorious: rock-toolchain/package_set
    - gitorious: rock/package_set
