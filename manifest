@@ -7,6 +7,7 @@ package_sets:
    - gitorious: rock-toolchain/package_set
    - gitorious: rock/package_set
    - gitorious: rock-tutorials/package_set
+   - gitorious: rock-simulation/package_set
    # Uncomment to enable the Rock/ROS bridge
    # You will also have to uncomment some lines in the layout below
    # - gitorious: rock-ros/package_set
@@ -18,6 +19,7 @@ layout:
    - rock.toolchain
    - rock
    - rock.tutorials
+   - rock.simulation
    # Uncomment to enable the Rock/ROS bridge
    # You will also have to uncomment some lines in the package_sets above
    # - rock.ros
