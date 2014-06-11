@@ -61,9 +61,6 @@ exclude_packages:
    - drivers/camera_ids
    - external/snap
    - image_processing/orogen/video_streamer
-   - slam/orogen/localization
-   - slam/orogen/graph_slam
-   - slam/graph_slam
 # Ignoring packages: same principle than package exclusion, but this time the
 # packages are considered to be installed and up-to-date. This is useful if you
 # want to use an already installed software package.
