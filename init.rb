@@ -25,7 +25,7 @@
 
 require 'autoproj/gitorious'
 Autoproj.gitorious_server_configuration('GITORIOUS', 'gitorious.org')
-env_add 'PATH', "/home/goldhoorn/bootstraps/all-rock/base/admin_scripts/bin"
+Autoproj.gitorious_server_configuration('GITHUB', 'github.com', :http_url => 'https://github.com')
 
 Autoproj.env_inherit 'CMAKE_PREFIX_PATH'
 
