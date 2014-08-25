@@ -58,6 +58,7 @@ layout:
 exclude_packages:
    - drivers/camera_ids
    - drivers/imar
+   - drivers/orogen/imar
    - external/snap
    - image_processing/orogen/video_streamer
 # Ignoring packages: same principle than package exclusion, but this time the
