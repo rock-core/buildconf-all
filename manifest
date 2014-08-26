@@ -56,10 +56,15 @@ layout:
 # expressions.
 #
 exclude_packages:
+   # needs special driver
    - drivers/camera_ids
+   # lost source
    - drivers/imar
    - drivers/orogen/imar
    - drivers/orogen/stim300
+   # broken osdeps 12.04, broken in testing
+   - slam/ceres_solver
+   # others
    - external/snap
    - image_processing/orogen/video_streamer
 # Ignoring packages: same principle than package exclusion, but this time the
