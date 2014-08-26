@@ -61,9 +61,14 @@ exclude_packages:
    # lost source
    - drivers/imar
    - drivers/orogen/imar
+   - drivers/stim300
    - drivers/orogen/stim300
    # broken osdeps 12.04, broken in testing
    - slam/ceres_solver
+   # broken
+   - drivers/camera_aravis
+   - drivers/orogen/camera_aravis
+   - drivers/orogen/kinect
    # others
    - external/snap
    - image_processing/orogen/video_streamer
