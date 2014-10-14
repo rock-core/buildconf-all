@@ -55,23 +55,6 @@ layout:
 # all packages but a few ones. As with layout, the names are actually regular
 # expressions.
 #
-exclude_packages:
-   # needs special driver
-   - drivers/camera_ids
-   # lost source
-   - drivers/imar
-   - drivers/orogen/imar
-   - drivers/stim300
-   - drivers/orogen/stim300
-   # broken osdeps 12.04, broken in testing
-   - slam/ceres_solver
-   # broken
-   - drivers/camera_aravis
-   - drivers/orogen/camera_aravis
-   - drivers/orogen/kinect
-   # others
-   - external/snap
-   - image_processing/orogen/video_streamer
 # Ignoring packages: same principle than package exclusion, but this time the
 # packages are considered to be installed and up-to-date. This is useful if you
 # want to use an already installed software package.
